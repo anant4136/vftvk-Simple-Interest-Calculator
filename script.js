@@ -14,7 +14,7 @@ function compute() {
 
         document.getElementById("result").innerHTML = "If you deposit " + principal +
             " at an interest rate of " + rate + "%" +
-            " You will receive an amount of " + final +
+            " You will receive an amount of " + interest +
             " in the year " + year;
     }
 }
