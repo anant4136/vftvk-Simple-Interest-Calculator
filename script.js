@@ -1,7 +1,7 @@
 function compute() {
     var principal = document.getElementById("principal").value;
     if (parseInt(principal) <= 0) {
-        document.getElementById("result").innerHTML = "Please Enter a positive value !!"
+        alert("Please Enter a positive value !!")
     }
     else {
         var rate = document.getElementById("rate").value;
