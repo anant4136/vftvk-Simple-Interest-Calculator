@@ -1,16 +1,43 @@
-<html>
-    <head>
+<!DOCTYPE html>
+
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <title>INTEREST</title>
+</head>
+
+<body>
+    <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <div class="box"> Amount <input type="number" id="principal" value="0"> </div>
+        <div class="box">Interest Rate: <input type="range" id="rate" oninput="updateRate(this.value)" min="1" max="20"
+                step="0.1" value="10"> <span id="rate_val">10%
+            </span> </div>
+        <div class="box">
+            No. of Years &nbsp;&nbsp;&nbsp;<select id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+            </select></div>
+        <div class="box">
+            <button onclick="compute()">Compute Interest</button>
+        </div>
+        <div class="box"><span id="result">
+
+            </span>
+        </div>
+        <footer>
+
+            &#169; This Calculator belongs to Anant4136.
+
+
+        </footer>
+    </div>
+</body>
+
 </html>
