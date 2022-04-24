@@ -20,5 +20,5 @@ function compute() {
 }
 function updateRate(val) {
 
-    document.getElementById("rate_val").innerHTML = val;
+    document.getElementById("rate_val").innerHTML = val+"%"
 }        
